@@ -1,6 +1,6 @@
 .banner {
   color: white;
-  object-fit: contain;
+  object-fit: cover;
   height: 448px;
 }
 
@@ -43,4 +43,14 @@
   color: black;
   background-color: blanchedalmond;
   transition: all 0.2s;
+}
+
+.banner_fadeBottom {
+  height: 7.4rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
 }
