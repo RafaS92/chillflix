@@ -20,7 +20,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
   }, [fetchUrl]);
 
   const opts = {
-    height: "390",
+    height: "410",
     width: "100%",
     playerVars: {},
     autoplay: 1,
@@ -30,7 +30,9 @@ function Row({ title, fetchUrl, isLargeRow }) {
     if (trailerUrl) {
       setTrailerUrl("");
     } else {
-      movieTrailer(movie?.name || "")
+      movieTrailer(
+        movie?.name || "" || movie?.title || movie?.name || movie?.original_name
+      )
         .then((url) => {
           const urlParams = new URLSearchParams(new URL(url).search);
           setTrailerUrl(urlParams.get("v"));
@@ -38,6 +40,8 @@ function Row({ title, fetchUrl, isLargeRow }) {
         .catch((error) => console.log(error));
     }
   };
+
+  console.log(movies);
 
   return (
     <div className="row">
