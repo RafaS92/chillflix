@@ -7,7 +7,9 @@
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;
+  height: auto;
   padding: 20px;
+  align-items: center;
 }
 
 .row_posters::-webkit-scrollbar {
@@ -15,10 +17,10 @@
 }
 
 .row_poster {
-  width: 100%;
+  min-width: 260px;
   object-fit: contain;
-  max-height: 140px;
-  margin-left: 10px;
+  max-height: 200px;
+  margin-left: 15px;
   transition: transform 450ms;
 }
 
@@ -27,9 +29,25 @@
 }
 
 .row_posterLarge {
-  max-height: 290px;
+  max-height: 350px;
+  max-width: 300px;
 }
 
 .row_posterLarge:hover {
   transform: scale(1.09);
+}
+
+@media (max-width: 425px) {
+  .row_poster {
+    min-width: 200px;
+    object-fit: contain;
+    max-height: 200px;
+    margin-left: 15px;
+    transition: transform 450ms;
+  }
+
+  .row_posterLarge {
+    max-height: 250px;
+    max-width: 200px;
+  }
 }

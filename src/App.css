@@ -1,8 +1,9 @@
 * {
-  margin: 0;
   scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
-
 .App {
   background-color: #111;
 }
