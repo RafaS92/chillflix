@@ -41,13 +41,17 @@ function Row({ title, fetchUrl, isLargeRow }) {
     }
   };
 
-  console.log(movies);
+  let filtered = movies.filter(
+    (movie) => movie.poster_path || movie.backdrop_path
+  );
+
+  console.log(filtered);
 
   return (
     <div className="row">
       <h2>{title}</h2>
       <div className="row_posters">
-        {movies.map((movie) => (
+        {filtered.map((movie) => (
           <img
             key={movie.id}
             onClick={() => handleClick(movie)}
