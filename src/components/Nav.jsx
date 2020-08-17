@@ -6,7 +6,7 @@ function Nav() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 100) {
         handleShow(true);
       } else handleShow(false);
     });
@@ -16,12 +16,14 @@ function Nav() {
   }, []);
 
   return (
-    <div className={`nav ${show && "nav_black"}  `}>
-      <img
-        className="nav_logo"
-        src="https://pmcvariety.files.wordpress.com/2020/05/netflix-logo.png?w=1024"
-        alt="chillflix logo"
-      />
+    <div className={`nav ${show && "nav_black"}`}>
+      <a href="#home">
+        <img
+          className="nav_logo"
+          src="../images/chillflix.png"
+          alt="chillflix logo"
+        />
+      </a>
 
       <img
         className="nav_avatar"
