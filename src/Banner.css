@@ -4,7 +4,6 @@
   height: 550px;
   margin-bottom: 20px;
   overflow-y: hidden;
-  display: flex;
 }
 
 .banner_contents {
@@ -20,13 +19,23 @@
 }
 
 .banner_description {
-  display: flex;
   width: 45rem;
   line-height: 1.4;
   padding-top: 1rem;
   font-size: 1rem;
   max-width: 360px;
   height: 80px;
+}
+
+.banner_fadeBottom {
+  height: 14.3rem;
+  width: 100%;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.74),
+    #111
+  );
 }
 
 @media (max-width: 425px) {
