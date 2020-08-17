@@ -45,8 +45,6 @@ function Row({ title, fetchUrl, isLargeRow }) {
     (movie) => movie.poster_path || movie.backdrop_path
   );
 
-  console.log(filtered);
-
   return (
     <div className="row">
       <h2>{title}</h2>
