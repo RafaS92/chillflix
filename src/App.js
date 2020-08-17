@@ -7,7 +7,7 @@ import requests from "./request";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="home">
       <Nav />
       <Banner />
       <Row
