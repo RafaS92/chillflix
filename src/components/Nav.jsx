@@ -27,7 +27,7 @@ function Nav() {
 
       <img
         className="nav_avatar"
-        src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/366be133850498.56ba69ac36858.png"
+        src="https://lh3.googleusercontent.com/proxy/UbAK7kp1F_PsvekreqFN7KuLw6Dl1JJJ72eNRKKhpPrx4Whh9sZkYbt6g-rqUP_FMp8cQLzU8I2oQr1NjkRfp875-VFOB0UZ31YdmgM4ozkb9GAg29dAY5rM1qX25-hyLkfC8pZpVJS_kz2Jff2C19MXjk4fEzOUHPtDyosqVdkyILTiaByQ"
         alt="Netflix Logo"
       />
     </div>

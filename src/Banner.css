@@ -16,15 +16,18 @@
   font-size: 3rem;
   font-weight: 800;
   padding-bottom: 0.3rem;
+  height: auto;
 }
 
 .banner_description {
+  position: absolute;
+  text-align: justify;
   width: 45rem;
   line-height: 1.4;
   padding-top: 1rem;
   font-size: 1rem;
   max-width: 360px;
-  height: 80px;
+  height: 180px;
 }
 
 .banner_fadeBottom {
@@ -43,16 +46,5 @@
     margin-left: 10px;
     padding-top: 140px;
     height: 190px;
-  }
-
-  .banner_description {
-    display: flex;
-    width: 45rem;
-    line-height: 1.4;
-    padding-top: 1rem;
-    font-size: 1rem;
-    max-width: 290px;
-    height: 80px;
-    text-align: justify;
   }
 }
