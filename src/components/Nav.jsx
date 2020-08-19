@@ -27,8 +27,8 @@ function Nav() {
 
       <img
         className="nav_avatar"
-        src="https://lh3.googleusercontent.com/proxy/UbAK7kp1F_PsvekreqFN7KuLw6Dl1JJJ72eNRKKhpPrx4Whh9sZkYbt6g-rqUP_FMp8cQLzU8I2oQr1NjkRfp875-VFOB0UZ31YdmgM4ozkb9GAg29dAY5rM1qX25-hyLkfC8pZpVJS_kz2Jff2C19MXjk4fEzOUHPtDyosqVdkyILTiaByQ"
-        alt="Netflix Logo"
+        src="https://cdn.iconscout.com/icon/free/png-512/avatar-372-456324.png"
+        alt="Avatar"
       />
     </div>
   );
